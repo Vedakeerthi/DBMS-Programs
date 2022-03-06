@@ -2,6 +2,7 @@
 A repository of Data base management system (DBMS) programs, which is executed in Structured query language (SQL). This sql language is implemented in the SQL workbench developed by oracle, which allows to create, edit and access the databases. Some of the basic concepts in DBMS is programmed in sql, some of them are follows : 
 
 * Data definition language without constraints
+* Data definition language with constraints 
 <br/>
 
 # **Data definition language**:
