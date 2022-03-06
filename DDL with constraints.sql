@@ -8,7 +8,7 @@ create table student_database(sname varchar(10) not null,
  desc student_database;
  
  create table exam(regno int primary key,
- rno int references stud (rno),
+ rno int references student_database(rno),
  dept varchar(40) not null,
  mark1 int check(mark1<=100 and mark1>=0)
  );
