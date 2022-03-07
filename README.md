@@ -32,3 +32,17 @@ Constraints enable to enforce the integrity of the database automatically, witho
 According to the program, the student database is used, in that database, a table student_database is created, with sname as variable characters which has constraint has not null, which means it should not be null and it must be filled with value, then comes the rno with integer type and which is specified as primary key, which means it uniquely identifies each element in a column, email_id is a variable character type with unique constraint and the faculty is declared by default as 'Engineering'.
 
 An another table is created which is named as exam, with regno having primary key, rno which is referenced from the table student_database, the dept variable with not null constraint and the mark1 variable which uses check constraint, and it checks if the variable is between 0 and 100. And thus the table is finally described to view the results.
+<br/>
+
+# **Data Manipulation Language :**
+
+It is a family of syntax elements similar to a computer programming language, used for selecting, inserting, deleting and updating data in a database, Some of the Data manipulation statements are :
+
+* Insert
+* Update
+* Delete
+* Select
+* Truncate
+
+Lets start, first of all we created a table employee in the database student, and we inserted the required values into the schema, once inserted we used the select statement to view the contents of the table, and then we altered the table by adding two other columns to the table, and then we updated the dept column of the employee table to 'CSE', once this is done we deleted a whole row from the table which has a roll of 8. Then we truncated the whole table. This is what we have done using the DML statements.
+
