@@ -3,6 +3,8 @@ A repository of Data base management system (DBMS) programs, which is executed i
 
 * Data definition language without constraints
 * Data definition language with constraints 
+* Data Manipulation language
+* Transaction control statements
 <br/>
 
 # **Data definition language**:
@@ -36,7 +38,7 @@ An another table is created which is named as exam, with regno having primary ke
 
 # **Data Manipulation Language :**
 
-It is a family of syntax elements similar to a computer programming language, used for selecting, inserting, deleting and updating data in a database, Some of the Data manipulation statements are :
+DML is a family of syntax elements similar to a computer programming language, used for selecting, inserting, deleting and updating data in a database, Some of the Data manipulation statements are :
 
 * Insert
 * Update
@@ -46,3 +48,12 @@ It is a family of syntax elements similar to a computer programming language, us
 
 Lets start, first of all we created a table employee in the database student, and we inserted the required values into the schema, once inserted we used the select statement to view the contents of the table, and then we altered the table by adding two other columns to the table, and then we updated the dept column of the employee table to 'CSE', once this is done we deleted a whole row from the table which has a roll of 8. Then we truncated the whole table. This is what we have done using the DML statements.
 
+# **Transaction control statements :**
+
+The transaction control statements ensures that all operations within the work unit are completed successfully, otherwise the transaction is aborted at the point of failure, and previous operations are rolled back to their former state. Ensures that the database properly changes states upon a successfully committed transaction, enables transactions to operate independently of and transparent to each other. It results or effect of a committed transaction persists in case of a system failure. These statements includes : 
+
+* Commit
+* Rollback
+* Savepoint
+
+In our program, the employee schema from the student database is used, and some changes are made using the DML statements such as insert, alter and a savepoint is placed after that, which says that it saves all the transaction made upto the savepoint, and when we insert an other value and after that we made a savepoint, this savepoint s2 saves the transaction upto that. And some other changes are made in the schema, and when the rollback statement is used it rollbacks to the last savepoint which neglects the changes made in the schema after the savepoint statement.
