@@ -5,6 +5,7 @@ A repository of Data base management system (DBMS) programs, which is executed i
 * Data definition language with constraints 
 * Data Manipulation language
 * Transaction control statements
+* Data control statements
 <br/>
 
 # **Data definition language**:
@@ -59,3 +60,14 @@ The transaction control statements ensures that all operations within the work u
 
 In our program, the employee schema from the student database is used, and some changes are made using the DML statements such as insert, alter and a savepoint is placed after that, which says that it saves all the transaction made upto the savepoint, and when we insert an other value and after that we made a savepoint, this savepoint s2 saves the transaction upto that. And some other changes are made in the schema, and when the rollback statement is used it rollbacks to the last savepoint which neglects the changes made in the schema after the savepoint statement.
 <br/>
+
+# **Data control statements :**
+
+DCL statements are used to enforce database security in a multiple user database environment, Only database administrator or owner of the database has the privileges on a database. There are only two commands in DCL, to provide or remove privilege on a database object, they are :
+
+* Grant
+* Revoke
+
+According to our program, we used the employee table from the student database, and we granted the employee schema to the user Vedakeerthi, here the privilege is transferred from the user root to another user Vedakeerthi. Then we removed the privilege given to the second user using the revoke statement. 
+
+Then a role has been created and then creating table privilege is given to the role, and even this role is granted to the user root. Once these are verified, the role is dropped.
