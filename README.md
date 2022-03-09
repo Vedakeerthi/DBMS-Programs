@@ -6,6 +6,7 @@ A repository of Data base management system (DBMS) programs, which is executed i
 * Data Manipulation language
 * Transaction control statements
 * Data control statements
+* Data projection statement
 <br/>
 
 # **Data definition language**:
@@ -71,3 +72,15 @@ DCL statements are used to enforce database security in a multiple user database
 According to our program, we used the employee table from the student database, and we granted the employee schema to the user Vedakeerthi, here the privilege is transferred from the user root to another user Vedakeerthi. Then we removed the privilege given to the second user using the revoke statement. 
 
 Then a role has been created and then creating table privilege is given to the role, and even this role is granted to the user root. Once these are verified, the role is dropped.
+
+# **Data projection statements :**
+
+Data projection statements is responsible for the alias names, concatenation of the schemas, selecting specific columns from the schemas, some of the commands used in the data projection statements are :
+
+According to our program, we used the employee table from the student database, as you can see we given some alias name to our columns in the schema, such as sname is also known as Empname, it is easy the alias name should be given next to the real name, similar to that an another column is also created as roll+10 with the name New_rno. 
+
+'distinct' command is used to select all the distinct values from the column. And also a new column is produced with the help of concatenation of two other columns sname and New_rno, this concatenation is done using the symbol '||'.
+
+And 'where' command is used to look for the specific value that is being specified in the schema. This is how the Data projection statement works.
+
+# ****
