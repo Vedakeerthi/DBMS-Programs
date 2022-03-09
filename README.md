@@ -8,6 +8,7 @@ A repository of Data base management system (DBMS) programs, which is executed i
 * Data control statements
 * Data projection statement
 * Data selection statement
+* Aggregate functions
 <br/>
 
 # **Data definition language**:
@@ -94,3 +95,14 @@ We also used relational and logical statements to select values from the schema,
 
 # **Aggregate functions :**
 
+Aggregate functions specifies the small functions used in the database schemas to complete their respective operations, some of the aggregate functions are :
+
+* Count
+* Minimum
+* Maximum
+* Sum
+* Average
+
+In the program, as usal the employee table from the student database which is under the root database is used, to arrange the values in the columns in ascending order, the order by function is used and the columns which is specified after the command are arranged in ascending order, to arrange in descending order, the same procedure is done but the desc keyword is added after specifying the name of the columns.
+
+To count the number of values in a column the count function is used, and the column name is specified inside the brackets to count the number of values, similary to know the minimum and maximum value of the column, the min function and the max function is used respectively. In program these values are selected as separate column in the schema.
