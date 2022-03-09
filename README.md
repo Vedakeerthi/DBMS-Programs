@@ -7,6 +7,7 @@ A repository of Data base management system (DBMS) programs, which is executed i
 * Transaction control statements
 * Data control statements
 * Data projection statement
+* Data selection statement
 <br/>
 
 # **Data definition language**:
@@ -83,4 +84,13 @@ According to our program, we used the employee table from the student database, 
 
 And 'where' command is used to look for the specific value that is being specified in the schema. This is how the Data projection statement works.
 
-# ****
+# **Data selection statement :**
+
+The basic knowledge of this statement is to understand select statement with different options such as between, and, in, not in, like and many more.
+
+According to our program, we used the employee schema from the student database, and we created an other schema named emp1 by selecting every values from the employee schema. Then we select everything from emp1 where roll between 8 and 10, we also used in command to select sname,roll from emp1 where dept in the selected values, and also similar to not in command. The 'like' command is used to select values which is like the given value, the given values with % specifies that, the other words doesn't matter, only it checks whether the value starts with the value given and it doesn't care about other words.
+
+We also used relational and logical statements to select values from the schema, the relational statements specifies greater than, lesser than, equals, greater than or equla to, lesser than or equal to and etc, whereas the logical statements specifies and, or, not.
+
+# **Aggregate functions :**
+
